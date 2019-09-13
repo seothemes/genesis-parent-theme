@@ -11,9 +11,5 @@
  * @link    https://my.studiopress.com/themes/genesis/
  */
 
-// Initialize Genesis.
-if ( function_exists( 'genesis' ) ) {
-	genesis();
-} else {
-	exit( 'Please install the Genesis Framework plugin.' );
-}
+require_once GENESIS_DIR . '/search.php';
+
