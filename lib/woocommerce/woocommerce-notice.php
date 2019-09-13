@@ -100,7 +100,7 @@ add_action( 'admin_enqueue_scripts', 'genesis_sample_notice_script' );
  */
 function genesis_sample_notice_script() {
 
-	wp_enqueue_script( 'genesis_sample_notice_script', get_stylesheet_directory_uri() . '/lib/woocommerce/js/notice-update.js', [ 'jquery' ], '1.0', true );
+	wp_enqueue_script( 'genesis_sample_notice_script', get_template_directory_uri() . '/lib/woocommerce/js/notice-update.js', [ 'jquery' ], '1.0', true );
 
 }
 

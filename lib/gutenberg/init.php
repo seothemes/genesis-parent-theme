@@ -18,7 +18,7 @@ function genesis_sample_enqueue_gutenberg_frontend_styles() {
 
 	wp_enqueue_style(
 		genesis_get_theme_handle() . '-gutenberg',
-		get_stylesheet_directory_uri() . '/lib/gutenberg/front-end.css',
+		get_template_directory_uri() . '/lib/gutenberg/front-end.css',
 		[ genesis_get_theme_handle() ],
 		genesis_get_theme_version()
 	);
@@ -109,7 +109,7 @@ add_theme_support(
 	$genesis_sample_appearance['editor-color-palette']
 );
 
-require_once get_stylesheet_directory() . '/lib/gutenberg/inline-styles.php';
+require_once get_template_directory() . '/lib/gutenberg/inline-styles.php';
 
 add_action( 'after_setup_theme', 'genesis_sample_content_width', 0 );
 /**
